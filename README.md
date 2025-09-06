@@ -1,14 +1,17 @@
 # SASL/OAUTHBEARER Access Token Provider
 
-## Overview 
+## Overview
+
+Forked from <https://github.com/damiannolan/sasl> as it was unmaintained and was depending on outdate versions of sarama.
 
 This package is intended to be used as a complement to [Shopify/sarama](https://github.com/Shopify/sarama). It provides an implementation of the `sarama.AccessTokenProvider` interface to be employed by clients using the SASL/OAUTHBEARER mechanism for Apache Kafka.
 
-The very popular `golang/oauth2` and `golang/oauth2/clientcredentials` are leveraged to perform the 2 legged client credentials flow to obtain an Access Token outside the context of a user. 
+The very popular `golang/oauth2` and `golang/oauth2/clientcredentials` are leveraged to perform the 2 legged client credentials flow to obtain an Access Token outside the context of a user.
 
 ## Installation
+
 ```
-go get github.com/damiannolan/sasl/oauthbearer
+go get github.com/kmetaxas/sarama-sasl/oauthbearer
 ```
 
 ## Usage
