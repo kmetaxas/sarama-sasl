@@ -1,4 +1,4 @@
-module github.com/damiannolan/sasl
+module github.com/kmetaxas/sarama-sasl
 
 go 1.23.0
 
